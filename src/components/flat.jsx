@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class Flat extends Component {
-  handleSelected = () => {
-    this.props.selectFunction(this.props.index);
+  handleSelected = ({ selectFunction, index }) => {
+    this.selectFunction(this.index);
   }
 
   render() {
